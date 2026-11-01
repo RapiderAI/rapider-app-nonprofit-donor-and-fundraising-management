@@ -1,0 +1,4578 @@
+{
+  "name": "Rapider Nonprofit Donor & Fundraising Management",
+  "key": "nonprofit-donor-and-fundraising-management",
+  "domainKey": "IND",
+  "appSuite": {
+    "key": "IND",
+    "title": "Rapider Industry Verticals Suite"
+  },
+  "type": "App",
+  "description": "1.2 Target Personas & Progressive Disclosure - SME Fast-Path Defaults (Community Nonprofits, Food Banks, Arts Organizations, 1–15 Staff): Start immediately with an Unrestricted General Fund and clean constituent views linked to crm, log card/check/DAF donations, monitor live Donor Retention % and LYBUNT lists, send 48-hour thank-you acknowledgments, and generate compliant single or year-end consolidated tax receipts in one click. - Enterprise Progressive Disclosure (National Charities, Universit",
+  "isPublic": true,
+  "tags": [
+    "ind",
+    "nonprofit-donor-and-fundraising-management",
+    "top-200"
+  ],
+  "iconUrl": "fas fa-briefcase",
+  "icon": "fas fa-briefcase",
+  "route": "nonprofit-donor-and-fundraising-management",
+  "rating": 5,
+  "reviewCount": 0,
+  "status": "app-metadata-completed",
+  "coverPage": "<!-- Rapider Official App SOW & Specification | App #188: Nonprofit Donor & Fundraising Management (nonprofit-donor-and-fundraising-management) | Domain: IND -->\n\n# #188 Nonprofit Donor & Fundraising Management (`nonprofit-donor-and-fundraising-management`) — Scope of Work (SOW)\n\n- **App Number & Name:** `#188` — Nonprofit Donor & Fundraising Management\n- **Proposed App Key:** `nonprofit-donor-and-fundraising-management`\n- **Suite / Domain Key & Model Prefix:** `IND` (`Ind*`)\n- **Representative Product (`P1`):** Bloomerang\n- **Combined Feature Catalog:** [../combined-features/188-nonprofit-donor-and-fundraising-management-features.md](../combined-features/188-nonprofit-donor-and-fundraising-management-features.md)\n- **Target Release Posture:** Constituent Retention, Multi-Tender Gift & Sustainer Ledger, Major Gifts & Grants Kanban, Restricted Fund Subledger & Statutory Tax Receipting Microapplication\n\n---\n\n## 1. Executive Outcome & Target Audience\n\n### 1.1 Business Problem Solved\nCharities, foundations, NGOs, educational institutions, and cultural nonprofits lose over 55% of first-time donors annually while risking IRS/CRA/Charity Commission audit penalties when fundraising spreadsheets fail to distinguish legal hard credits from DAF/spouse soft credits, miscalculate quid-pro-quo gala deductibility, commingle donor-restricted funds with unrestricted operating cash, or edit issued tax receipts in place. **Rapider Nonprofit Donor & Fundraising Management (`nonprofit-donor-and-fundraising-management`)** unifies donor retention analytics, multi-tender gift & recurring sustainer processing, multi-year pledges, major-gift & institutional grant pipelines, FASB ASC 958 restricted fund subledger handoffs, and tamper-evident tax receipting directly atop canonical Rapider `crm`, `payments`, `subscriptions`, `acc`, `campaigns`, and `events` suites.\n\n### 1.2 Target Personas & Progressive Disclosure\n- **SME Fast-Path Defaults (Community Nonprofits, Food Banks, Arts Organizations, 1–15 Staff):** Start immediately with an `Unrestricted General Fund` and clean constituent views linked to `crm`, log card/check/DAF donations, monitor live Donor Retention % and LYBUNT lists, send 48-hour thank-you acknowledgments, and generate compliant single or year-end consolidated tax receipts in one click.\n- **Enterprise Progressive Disclosure (National Charities, University/Hospital Foundations, Global NGOs):** Activate FASB ASC 958 / Charities SORP restricted & endowment fund hierarchies (`IndRestrictedFund`), multi-fund split gifts, appreciated stock & in-kind valuations, corporate matching-gift claim pipelines, multi-year enforceable pledge installment schedules with write-off governance, institutional grant compliance deliverables, UK Gift Aid 25% reclaim schedules, and automated GL restriction-release journal handoffs to `acc`.\n\n### 1.3 Measurable Business Outcomes\n- **+10–18 Percentage-Point Lift in First-Time Donor Retention:** Sub-48-hour unacknowledged gift queues, generosity scoring, and LYBUNT/SYBUNT stewardship lists convert one-time givers into recurring sustainers.\n- **Zero DAF or Quid-Pro-Quo Tax Receipt Violations:** Deterministic receipt rules automatically block tax-deductible receipts on DAF grants (issuing non-tax acknowledgments to the advising donor) and subtract `fairMarketBenefitAmount` on event/gala gifts.\n- **100% Restricted Fund & GL Reconciliation:** Balanced `Decimal128` subledger postings to `FinJournalEntry` keep development totals and finance Statement of Activities reconciled to the cent.\n\n### 1.4 Benchmark Summary (`P1`–`P6`)\nSynthesizes the retention focus, generosity scoring, DAF attribution, and effortless receipting of **`P1` Bloomerang**, complex soft credits, multi-year pledges, and split-gift rigor of **`P2` Blackbaud Raiser's Edge NXT**, responsive donor signals and P2P fundraising of **`P3` Virtuous**, campaign/fund coding and employer matching of **`P4` DonorPerfect**, canonical CRM householding and grant deliverable management of **`P5` Salesforce Nonprofit Cloud**, and dimensional ASC 958 restricted fund accounting handoffs of **`P6` Sage Intacct Nonprofit**.\n\n---\n\n## 2. In-Scope, Out-of-Scope & Suite Ownership Boundaries\n\n### 2.1 In-Scope Capabilities\n1. Constituent donor stewardship profiles (`IndDonorProfile`), retention/LYBUNT/SYBUNT segmentation, anonymity masking, and UK Gift Aid declaration tracking.\n2. Multi-tender gift ledger (`IndGiftTransaction` — card/ACH, check, DAF, stock, in-kind), multi-fund splits, quid-pro-quo fair-market-value benefit deduction, tribute/memorial tracking, and hard-vs-soft credit attribution.\n3. Multi-year enforceable pledges, installment schedules, recurring sustainer links, and governed write-offs (`IndPledgeCommitment`).\n4. Major-gift moves management and institutional grant proposal/award compliance `<rapider-kanban>` (`IndGrantProposal`) plus peer-to-peer fundraiser rollups (`IndPeerFundraiser`).\n5. Restricted/unrestricted fund registry (`IndRestrictedF",
+  "scopeOfWork": "<!-- Rapider Official App SOW & Specification | App #188: Nonprofit Donor & Fundraising Management (nonprofit-donor-and-fundraising-management) | Domain: IND -->\n\n# #188 Nonprofit Donor & Fundraising Management (`nonprofit-donor-and-fundraising-management`) — Scope of Work (SOW)\n\n- **App Number & Name:** `#188` — Nonprofit Donor & Fundraising Management\n- **Proposed App Key:** `nonprofit-donor-and-fundraising-management`\n- **Suite / Domain Key & Model Prefix:** `IND` (`Ind*`)\n- **Representative Product (`P1`):** Bloomerang\n- **Combined Feature Catalog:** [../combined-features/188-nonprofit-donor-and-fundraising-management-features.md](../combined-features/188-nonprofit-donor-and-fundraising-management-features.md)\n- **Target Release Posture:** Constituent Retention, Multi-Tender Gift & Sustainer Ledger, Major Gifts & Grants Kanban, Restricted Fund Subledger & Statutory Tax Receipting Microapplication\n\n---\n\n## 1. Executive Outcome & Target Audience\n\n### 1.1 Business Problem Solved\nCharities, foundations, NGOs, educational institutions, and cultural nonprofits lose over 55% of first-time donors annually while risking IRS/CRA/Charity Commission audit penalties when fundraising spreadsheets fail to distinguish legal hard credits from DAF/spouse soft credits, miscalculate quid-pro-quo gala deductibility, commingle donor-restricted funds with unrestricted operating cash, or edit issued tax receipts in place. **Rapider Nonprofit Donor & Fundraising Management (`nonprofit-donor-and-fundraising-management`)** unifies donor retention analytics, multi-tender gift & recurring sustainer processing, multi-year pledges, major-gift & institutional grant pipelines, FASB ASC 958 restricted fund subledger handoffs, and tamper-evident tax receipting directly atop canonical Rapider `crm`, `payments`, `subscriptions`, `acc`, `campaigns`, and `events` suites.\n\n### 1.2 Target Personas & Progressive Disclosure\n- **SME Fast-Path Defaults (Community Nonprofits, Food Banks, Arts Organizations, 1–15 Staff):** Start immediately with an `Unrestricted General Fund` and clean constituent views linked to `crm`, log card/check/DAF donations, monitor live Donor Retention % and LYBUNT lists, send 48-hour thank-you acknowledgments, and generate compliant single or year-end consolidated tax receipts in one click.\n- **Enterprise Progressive Disclosure (National Charities, University/Hospital Foundations, Global NGOs):** Activate FASB ASC 958 / Charities SORP restricted & endowment fund hierarchies (`IndRestrictedFund`), multi-fund split gifts, appreciated stock & in-kind valuations, corporate matching-gift claim pipelines, multi-year enforceable pledge installment schedules with write-off governance, institutional grant compliance deliverables, UK Gift Aid 25% reclaim schedules, and automated GL restriction-release journal handoffs to `acc`.\n\n### 1.3 Measurable Business Outcomes\n- **+10–18 Percentage-Point Lift in First-Time Donor Retention:** Sub-48-hour unacknowledged gift queues, generosity scoring, and LYBUNT/SYBUNT stewardship lists convert one-time givers into recurring sustainers.\n- **Zero DAF or Quid-Pro-Quo Tax Receipt Violations:** Deterministic receipt rules automatically block tax-deductible receipts on DAF grants (issuing non-tax acknowledgments to the advising donor) and subtract `fairMarketBenefitAmount` on event/gala gifts.\n- **100% Restricted Fund & GL Reconciliation:** Balanced `Decimal128` subledger postings to `FinJournalEntry` keep development totals and finance Statement of Activities reconciled to the cent.\n\n### 1.4 Benchmark Summary (`P1`–`P6`)\nSynthesizes the retention focus, generosity scoring, DAF attribution, and effortless receipting of **`P1` Bloomerang**, complex soft credits, multi-year pledges, and split-gift rigor of **`P2` Blackbaud Raiser's Edge NXT**, responsive donor signals and P2P fundraising of **`P3` Virtuous**, campaign/fund coding and employer matching of **`P4` DonorPerfect**, canonical CRM householding and grant deliverable management of **`P5` Salesforce Nonprofit Cloud**, and dimensional ASC 958 restricted fund accounting handoffs of **`P6` Sage Intacct Nonprofit**.\n\n---\n\n## 2. In-Scope, Out-of-Scope & Suite Ownership Boundaries\n\n### 2.1 In-Scope Capabilities\n1. Constituent donor stewardship profiles (`IndDonorProfile`), retention/LYBUNT/SYBUNT segmentation, anonymity masking, and UK Gift Aid declaration tracking.\n2. Multi-tender gift ledger (`IndGiftTransaction` — card/ACH, check, DAF, stock, in-kind), multi-fund splits, quid-pro-quo fair-market-value benefit deduction, tribute/memorial tracking, and hard-vs-soft credit attribution.\n3. Multi-year enforceable pledges, installment schedules, recurring sustainer links, and governed write-offs (`IndPledgeCommitment`).\n4. Major-gift moves management and institutional grant proposal/award compliance `<rapider-kanban>` (`IndGrantProposal`) plus peer-to-peer fundraiser rollups (`IndPeerFundraiser`).\n5. Restricted/unrestricted fund registry (`IndRestrictedFund`) with subledger-to-`acc` (`FinJournalEntry`) gift & restriction-release handoffs.\n6. Sequential, immutable void-and-reissue statutory tax receipting (`IndTaxReceipt`).\n\n### 2.2 Out-of-Scope Capabilities (Delegated to Adjacent Rapider Apps)\n- **Payment gateway tokenization, ACH clearing, and card dunning execution:** Owned by `payments` (`FinPaymentIntent`) and `subscriptions` (`FinSubscription`).\n- **Core General Ledger trial balance, accounts payable disbursements, and audited GAAP balance-sheet generation:** Owned by `acc` (`FinAccount`, `FinJournalEntry`) and `accpayable` (`FinSupplierBill`).\n- **Congregational child check-in security badges, worship service orders, and sacramental/pastoral counseling logs:** Owned by `#189 Church & Religious Organization Management`.\n- **Broadcast email delivery engines and gala ticket seating check-in:** Owned by `campaigns`/`email` (`MktCampaign`, `MktEmailMessage`) and `events` (`MktEvent`).\n- **Standalone custom approval inbox:** Delegated strictly to Rapider Platform Home `WorkItem`s.\n\n### 2.3 Cross-Suite Ownership & Integration Contract\n\n| Domain / App | Owns (Canonical Models) | Integration Contract with `nonprofit-donor-and-fundraising-management` |\n| :--- | :--- | :--- |\n| **`nonprofit-donor-and-fundraising-management` (`#188` — This App)** | `IndDonorProfile`, `IndRestrictedFund`, `IndGiftTransaction`, `IndPledgeCommitment`, `IndGrantProposal`, `IndPeerFundraiser`, `IndTaxReceipt` | Owns donor retention intelligence, hard/soft gift attribution, pledges, grants, restricted-fund subledger rules, and statutory tax receipts. |\n| **Core `crm` App (`CRM` Suite)** | `CrmAccount`, `CrmContact` | Every `IndDonorProfile` binds `crmContactId` or `crmAccountId`; DAF sponsors, foundations, and matching employers are canonical `CrmAccount`s. |\n| **`payments` & `subscriptions` (`FIN`)** | `FinPaymentIntent`, `FinSubscription` | Online gifts settle via `FinPaymentIntent`; monthly sustainers link `subscriptionId -> FinSubscription.id`. |\n| **`acc` (`FIN` Suite)** | `FinAccount`, `FinJournalEntry` | `IndRestrictedFund` maps to `FinAccount`; settled gifts, pledge receivables, and restriction releases post balanced `FinJournalEntry` batches. |\n| **`campaigns` & `events` (`MKT` Suite)** | `MktCampaign`, `MktEvent` | Gifts and P2P pages attribute `appealCampaignId -> MktCampaign.id` and gala/quid-pro-quo events `eventId -> MktEvent.id`. |\n| **Rapider Platform Services** | Identity/RBAC, Home `WorkItem`, `projectChannelMessage`, Files | Pledge write-offs and restricted-fund transfers route via Home `WorkItem`s; signed grant agreements & PDF tax receipts reside in Platform Files. |\n\n---\n\n## 3. Primary Web Pages & Sidebar Navigation Architecture\n\nTo comply strictly with the **Rapider Minimum 3 Items Sidebar Rule**, all visible pages are organized into **3 sidebar sections (`Overview`, `Giving & Campaigns`, `Funds & Tax Compliance`) containing 3 visible items each (9 visible menu items total)**, while detail and drawer routes set `displayOnMenu: false`.\n\n| # | Route | Page Title | Sidebar Section | Menu Visible | Key Components & UX |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| 1 | `dashboard` | Fundraising Hub | `Overview` | `true` (Order 1) | KPI cards (`countSWR`), live Donor Retention % gauge, LYBUNT/SYBUNT recovery counters, <48h unacknowledged gift SLA queue, restricted vs. unrestricted chart. |\n| 2 | `donors` | Constituent Donors | `Overview` | `true` (Order 2) | Searchable `IndDonorProfile` directory (`findSWR`), `#activeFilterTagsBar` with `Clear all`, generosity score, `<rapider-phone-input>` stewardship mobile, LYBUNT filter pills. |\n| 3 | `major-gifts-grants` | Major Gifts & Grants | `Overview` | `true` (Order 3) | `<rapider-kanban>` board across `IDENTIFICATION`, `QUALIFICATION`, `CULTIVATION`, `SOLICITATION_SUBMITTED`, `AWARDED_COMMITTED`, `STEWARDSHIP_REPORTING`, `DECLINED` (`IndGrantProposal`). |\n| 4 | `gifts` | Gift & DAF Ledger | `Giving & Campaigns` | `true` (Order 4) | `IndGiftTransaction` ledger, tender badges (`CARD_ACH`, `DAF_GRANT`, `STOCK`, `IN_KIND`), hard/soft credit summary, acknowledgment & receipt status chips. |\n| 5 | `pledges-sustainers` | Pledges & Sustainers | `Giving & Campaigns` | `true` (Order 5) | `IndPledgeCommitment` multi-year installment & `FinSubscription` sustainer monitor, past-due installment alerts, matching-gift claim tracker. |\n| 6 | `peer-fundraisers` | Peer-to-Peer & Appeals | `Giving & Campaigns` | `true` (Order 6) | `IndPeerFundraiser` captain/team leaderboards linked to `MktCampaign`/`MktEvent`, goal progress bars (`Decimal128`), anonymous-safe recognition preview. |\n| 7 | `restricted-funds` | Restricted Funds & GL | `Funds & Tax Compliance` | `true` (Order 7) | `IndRestrictedFund` balances (`UNRESTRICTED`, `PURPOSE_RESTRICTED`, `ENDOWMENT`), mapped `FinAccount`, subledger-to-`FinJournalEntry` posting & release log. |\n| 8 | `tax-receipts` | Tax Receipts & Gift Aid | `Funds & Tax Compliance` | `true` (Order 8) | Sequential `IndTaxReceipt` register, batch year-end consolidated statement generator, void-and-reissue action, UK Gift Aid 25% claim export. |\n| 9 | `stewardship-analytics` | Retention & Appeal ROI | `Funds & Tax Compliance` | `true` (Order 9) | First-time vs. repeat retention cohorts, campaign cost-to-raise-a-dollar (`MktCampaign`), grant compliance report calendar, light/dark theme charts. |\n| 10 | `donor-detail` | Constituent 360 Timeline | *(Hidden)* | `false` | Full `IndDonorProfile` view (`?id=...`), hard vs. soft credit totals, pledges, tax receipts, grounded AI stewardship draft (`projectChannelMessage`), `Back to list`. |\n| 11 | `grant-detail` | Grant & Major Gift Dossier | *(Hidden)* | `false` | `IndGrantProposal` award stipulations, linked `IndRestrictedFund` burn rate, milestone deliverables, signed agreement files, `Back to list`. |\n| 12 | `gift-drawer` | Record Gift / DAF / Stock | *(Hidden)* | `false` | Sliding drawer capturing payer, tender, multi-fund `Decimal128` splits, quid-pro-quo benefit deduction, soft-credit advisor, `finally` reset & `closePageDrawer()`. |\n| 13 | `pledge-drawer` | Create Pledge Schedule | *(Hidden)* | `false` | Sliding drawer configuring multi-year `IndPledgeCommitment`, installment frequency, `IndRestrictedFund` designation, donor `<rapider-phone-input>`, and instant parent refresh. |\n\n### Mandatory Rapider UI Standards Enforced Across All Pages\n- **SWR-First Clean Reads:** Initial loads invoke `window.rapiderApi.findSWR` / `countSWR` with zero manual `isDeleted` filter clauses in API payloads and filter `item.isDeleted !== true` in memory.\n- **Table Actions & Row Navigation:** Clicking primary identifiers (Constituent Name, Gift Number, Pledge Code, Proposal Title, Receipt Number) navigates to the detail route (`font-semibold text-primary hover:underline cursor-pointer`). **Zero standalone \"View\" buttons** appear in `Actions`; rows render icon+text **Edit** and icon-only **Delete** (`title=\"Delete\" aria-label=\"Delete\"`).\n- **Custom Elements & Contrast:** Stewardship phone inputs use `<rapider-phone-input>`, `#/major-gifts-grants` uses `<rapider-kanban>`, all primary/danger buttons enforce `#ffffff !important` white text, and native browser `alert`/`confirm`/`prompt` are banned.\n\n---\n\n## 4. Canonical Data Models (`Ind*` — 7 Models)\n\nAll models belong to the `IND` domain (`Ind*` prefix), omit `projectId`, assign platform UUIDs (`00000000-xxxx-xxxx-xxxx-xxxxxxxxxxxx` in deterministic seeds), store monetary gifts/pledges/benefits/receipts as `Decimal128`, and track concurrency via `version`.\n\n| Model Name | Key Fields & Types | Relationships & External Refs | Invariants & Lifecycle |\n| :--- | :--- | :--- | :--- |\n| **`IndDonorProfile`** | `id: UUID`, `constituentCode: String`, `donorType: Enum(INDIVIDUAL, HOUSEHOLD, FOUNDATION, CORPORATE, DAF_SPONSOR)`, `displayName: String`, `stewardshipPhone: String (E.164)?`, `lifetimeHardCreditAmt: Decimal128`, `lifetimeSoftCreditAmt: Decimal128`, `firstGiftDate: Date?`, `latestGiftDate: Date?`, `largestGiftAmt: Decimal128`, `currencyCode: String`, `generosityScore: Decimal128 (0..100)`, `retentionCohort: Enum(NEW_FIRST_TIME, REPEAT_ACTIVE, SUSTAINER, LYBUNT, SYBUNT, LAPSED)`, `isAnonymousDefault: Boolean`, `ukGiftAidActive: Boolean`, `ukGiftAidSignedAt: Date?`, `version: Int` | `crmContactId -> CrmContact.id?`, `crmAccountId -> CrmAccount.id?`, `assignedGiftOfficerId -> HrEmployee.id?` | Exactly one of `crmContactId` or `crmAccountId` must be bound as primary legal constituent; `isAnonymousDefault = true` masks `displayName` for non-Finance/non-assigned roles. |\n| **`IndRestrictedFund`** | `id: UUID`, `fundCode: String`, `name: String`, `restrictionClass: Enum(UNRESTRICTED_GENERAL, TEMPORARILY_PURPOSE_RESTRICTED, TIME_RESTRICTED, PERMANENT_ENDOWMENT)`, `purposeDescription: String`, `totalContributedAmt: Decimal128`, `releasedOrSpentAmt: Decimal128`, `availableRestrictedBalance: Decimal128`, `currencyCode: String`, `isActive: Boolean`, `version: Int` | `revenueGlAccountId -> FinAccount.id`, `netAssetGlAccountId -> FinAccount.id` | Unique `fundCode`; `releasedOrSpentAmt` on restricted funds cannot exceed `totalContributedAmt` (`availableRestrictedBalance >= 0.00`). |\n| **`IndGiftTransaction`** | `id: UUID`, `giftNumber: String`, `receivedAt: DateTime`, `tenderType: Enum(CARD_ACH, CHECK, WIRE, DAF_GRANT, STOCK_SECURITIES, IN_KIND_GOODS, EMPLOYER_MATCH)`, `grossAmount: Decimal128`, `fairMarketBenefitAmount: Decimal128`, `taxDeductibleAmount: Decimal128`, `currencyCode: String`, `fundAllocationsJson: JSON`, `softCreditsJson: JSON`, `tributeType: Enum(NONE, IN_HONOR_OF, IN_MEMORY_OF)`, `tributeHonoreeName: String?`, `isAnonymous: Boolean`, `acknowledgmentStatus: Enum(UNACKNOWLEDGED, ACKNOWLEDGED, NOT_REQUIRED)`, `glPostingStatus: Enum(UNPOSTED, POSTED_TO_GL, REVERSED)`, `status: Enum(PENDING_SETTLEMENT, SETTLED, REFUNDED_VOIDED)`, `version: Int` | `hardCreditDonorId -> IndDonorProfile.id`, `pledgeId -> IndPledgeCommitment.id?`, `grantProposalId -> IndGrantProposal.id?`, `peerFundraiserId -> IndPeerFundraiser.id?`, `paymentIntentId -> FinPaymentIntent.id?`, `appealCampaignId -> MktCampaign.id?`, `eventId -> MktEvent.id?`, `journalEntryId -> FinJournalEntry.id?`, `taxReceiptId -> IndTaxReceipt.id?` | Hard invariants: `sum(fundAllocationsJson.amount) == grossAmount` and `taxDeductibleAmount == max(0, grossAmount - fairMarketBenefitAmount)` unless `tenderType == DAF_GRANT` (where `taxDeductibleAmount == 0.00` for receipting because DAF sponsor already issued tax deduction); `POSTED_TO_GL` gifts cannot be edited in place without a Home `WorkItem` reversal. |\n| **`IndPledgeCommitment`** | `id: UUID`, `pledgeNumber: String`, `commitmentType: Enum(FIXED_MULTI_YEAR_PLEDGE, SUSTAINER_RECURRING, MATCHING_CLAIM)`, `pledgedAt: Date`, `totalPledgedAmount: Decimal128`, `paidToDateAmount: Decimal128`, `writtenOffAmount: Decimal128`, `remainingBalanceAmount: Decimal128`, `currencyCode: String`, `installmentFrequency: Enum(MONTHLY, QUARTERLY, SEMI_ANNUAL, ANNUAL, CUSTOM)`, `nextInstallmentDueDate: Date?`, `installmentsJson: JSON`, `status: Enum(ACTIVE, PAST_DUE, FULFILLED, WRITTEN_OFF, CANCELLED)`, `version: Int` | `donorId -> IndDonorProfile.id`, `restrictedFundId -> IndRestrictedFund.id`, `subscriptionId -> FinSubscription.id?`, `writeOffWorkItemId -> WorkItem.id?` | `paidToDateAmount + writtenOffAmount + remainingBalanceAmount == totalPledgedAmount` for fixed pledges; pledge write-offs (`writtenOffAmount > 0`) require Home `WorkItem` approval. |\n| **`IndGrantProposal`** | `id: UUID`, `proposalCode: String`, `opportunityType: Enum(INSTITUTIONAL_GRANT, MAJOR_GIFT_ASK)`, `title: String`, `stage: Enum(IDENTIFICATION, QUALIFICATION, CULTIVATION, SOLICITATION_SUBMITTED, AWARDED_COMMITTED, STEWARDSHIP_REPORTING, DECLINED)`, `askAmount: Decimal128`, `awardedAmount: Decimal128?`, `currencyCode: String`, `submissionDeadline: Date?`, `nextComplianceReportDue: Date?`, `deliverablesJson: JSON`, `agreementFileId: UUID?`, `version: Int` | `funderDonorId -> IndDonorProfile.id`, `restrictedFundId -> IndRestrictedFund.id`, `leadOfficerEmployeeId -> HrEmployee.id` | Transitioning `stage` to `AWARDED_COMMITTED` requires `awardedAmount > 0` and binds a target `IndRestrictedFund`. |\n| **`IndPeerFundraiser`** | `id: UUID`, `pageSlug: String`, `title: String`, `teamName: String?`, `goalAmount: Decimal128`, `raisedAmount: Decimal128`, `donorCount: Int`, `currencyCode: String`, `status: Enum(ACTIVE, COMPLETED, ARCHIVED)`, `version: Int` | `championDonorId -> IndDonorProfile.id`, `appealCampaignId -> MktCampaign.id`, `restrictedFundId -> IndRestrictedFund.id`, `eventId -> MktEvent.id?` | Gifts through a P2P page record `HARD_CREDIT` to the actual giver and `SOFT_CREDIT` to `championDonorId`. |\n| **`IndTaxReceipt`** | `id: UUID`, `receiptSequenceNumber: String`, `receiptScope: Enum(SINGLE_GIFT, ANNUAL_CONSOLIDATED)`, `taxJurisdiction: Enum(US_IRS_501C3, CA_CRA, UK_GIFT_AID, EU_DONATION, NON_DEDUCTIBLE_ACK)`, `taxYear: Int`, `issuedAt: DateTime`, `legalDonorNameSnapshot: String`, `grossGiftTotal: Decimal128`, `benefitValueTotal: Decimal128`, `eligibleTaxDeductibleTotal: Decimal128`, `ukGiftAidReclaimAmt: Decimal128?`, `currencyCode: String`, `goodsOrServicesDisclosure: String`, `status: Enum(ISSUED, VOIDED_REPLACED)`, `voidReason: String?`, `replacedByReceiptId: UUID?`, `pdfFileId: UUID?`, `version: Int` | `donorId -> IndDonorProfile.id`, `giftIds: UUID[]` | Unique sequential `receiptSequenceNumber`; `ISSUED` receipts are strictly immutable — any correction invokes `voidAndReissueTaxReceipt`, marking the original `VOIDED_REPLACED` and creating a new sequential receipt. |\n\n---\n\n## 5. Core End-to-End User Journeys\n\n### Journey 1: DAF Grant vs. Gala Split-Gift Entry & Statutory Receipt Guardrails\n1. Gift Processing Specialist opens `#/gifts`, clicks **Record Gift** (`gift-drawer`), and logs a `\\$10,000.00` `DAF_GRANT` from `Fidelity Charitable` (`hardCreditDonorId`) advised by constituent `Dr. Maya Lin` (`SOFT_CREDIT`), designated `100%` to `Clean Water Restricted Fund`.\n2. `ind.nonprofit.recordGift` credits `\\$10,000.00` hard credit to `Fidelity Charitable` and `\\$10,000.00` soft credit to `Dr. Maya Lin`, blocks issuing an IRS 501(c)(3) tax-deductible receipt to `Dr. Maya Lin` (`NON_DEDUCTIBLE_ACK` thank-you letter queued instead), and posts a restricted revenue `FinJournalEntry` to `acc`.\n3. Next, the specialist logs a `\\$500.00` `CARD_ACH` Gala ticket/donation (`eventId -> MktEvent`) with `fairMarketBenefitAmount = \\$120.00` dinner value; the command computes `taxDeductibleAmount = \\$380.00` (`Decimal128`) and issues sequential receipt `RCPT-2026-004182` disclosing the `\\$120.00` quid-pro-quo benefit.\n\n### Journey 2: Major Gift & Foundation Grant Moves Management (`<rapider-kanban>`)\n1. Major Gifts Officer opens `#/major-gifts-grants`, filters by `Opportunity Type: \"INSTITUTIONAL_GRANT\"`, verifies `#activeFilterTagsBar`, and drags `GRT-2026-019 (Gates Regional Literacy Initiative — \\$250,000.00)` from `SOLICITATION_SUBMITTED` to `AWARDED_COMMITTED`.\n2. The officer links `IndRestrictedFund` (`FND-LIT-2026`), sets `nextComplianceReportDue = 2026-12-15`, and creates a 2-year `IndPledgeCommitment` (`2 x \\$125,000.00` installments).\n3. Inside `#/grant-detail?id=...`, the officer triggers a grounded AI funder stewardship update in `projectChannelMessage` citing actual restricted spend and milestone KPIs.\n\n### Journey 3: Pledge Write-Off & Restricted Fund Reallocation via Home `WorkItem`\n1. Donor requests reallocating a prior `\\$5,000.00` gift from `Youth Scholarship Restricted Fund` to `Emergency Relief Restricted Fund` (with signed donor email attached), while a separate uncollectible `\\$2,500.00` pledge requires write-off.\n2. Both requests are blocked from unilateral CSR execution and generate Rapider Home `WorkItem`s for the Finance Controller & Development Director.\n3. Upon approval, reversing and reclassifying `FinJournalEntry` lines post to `acc`, voiding and reissuing any affected `IndTaxReceipt` if tax-deductible terms changed.\n\n### Journey 4: Year-End Consolidated Sustainer Tax Statements\n1. In January, Development Operations opens `#/tax-receipts` and triggers **Generate Annual Sustainer Statements** for `taxYear = 2026`.\n2. `annualTaxStatementWorkflow` aggregates all unreceipted `SETTLED` monthly `FinSubscription` gifts per `IndDonorProfile`, excludes `DAF_GRANT` items, generates sequential `ANNUAL_CONSOLIDATED` `IndTaxReceipt` PDFs in Platform Files, and updates constituent timelines.\n\n### Journey 5: Record Click-Through Navigation (`Constituent Donors -> Constituent 360 -> Back Restoration`)\n1. From `#/donors` filtered to `Retention Cohort: \"LYBUNT\"` and `Search: \"Lin\"`, the Development Officer clicks `Dr. Maya Lin`.\n2. Router navigates cleanly to `#/donor-detail?id=00000000-0188-0000-0000-000000000210` without `<base href>` 404 diversion, showing both `lifetimeHardCreditAmt` and `lifetimeSoftCreditAmt`, DAF history, and stewardship tasks.\n3. Clicking `Back to list` (`#btnGoBack`) returns to `#/donors` with `Retention Cohort: \"LYBUNT\"` and `Search: \"Lin\"` preserved in `#activeFilterTagsBar`.\n\n---\n\n## 6. Consolidated Feature Priorities & Work Packages\n\n### `P0` Foundation Work Packages (Must-Have for Initial Release)\n- **WP-P0-1 — Constituent Stewardship, Retention & Hard/Soft Attribution (`NFP-001`, `NFP-002`, `NFP-003`):** Deliver `IndDonorProfile` bound to `CrmContact`/`CrmAccount` with `<rapider-phone-input>`, Donor Retention % / LYBUNT / SYBUNT cohorts, and dual hard/soft credit rollups.\n- **WP-P0-2 — Multi-Tender Gifts, Quid-Pro-Quo Math, Pledges & Sustainers (`NFP-005`, `NFP-006`, `NFP-007`, `NFP-008`):** Build `IndGiftTransaction` (`FinPaymentIntent` link, multi-fund `Decimal128` splits, benefit deduction), `IndPledgeCommitment` installment schedules, Home `WorkItem` write-offs, and `FinSubscription` sustainer binding.\n- **WP-P0-3 — Major Gifts / Grants Kanban & Restricted Fund GL Subledger (`NFP-011`, `NFP-014`, `NFP-015`):** Deliver `<rapider-kanban>` `IndGrantProposal` moves management, `IndRestrictedFund` registry, and balanced `FinJournalEntry` postings to `acc`.\n- **WP-P0-4 — Sequential Immutable Tax Receipting (`NFP-016`, `NFP-017`):** Build `IndTaxReceipt` numbering, DAF non-deductible receipt protection, annual sustainer consolidation, and immutable void-and-reissue workflows.\n\n### `P1` Enterprise Scale Work Packages\n- **WP-P1-1 — Tribute Giving, Employer Matching, P2P Pages & 48h Stewardship Queue (`NFP-004`, `NFP-009`, `NFP-010`, `NFP-019`):** Add honor/memorial next-of-kin notices, corporate match claim tracking, `IndPeerFundraiser` rollups (`MktCampaign`/`MktEvent`), and <48h unacknowledged gift SLA queues.\n- **WP-P1-2 — Grant Milestones, UK Gift Aid & Restricted Diversion Gates (`NFP-012`, `NFP-018`, `NFP-020`):** Deliver grant deliverable calendars, HMRC 25% Gift Aid schedules, and Home `WorkItem` approval gates for restricted-fund reallocations.\n\n### `P2` Adjacent & Grounded AI Work Packages\n- **WP-P2-1 — Stewardship AI, Churn Scoring, Appeal ROI & Privacy Masking (`NFP-013`, `NFP-021`, `NFP-022`, `NFP-023`, `NFP-024`):** Deliver grounded AI thank-you/grant briefs in `projectChannelMessage`, sustainer churn alerts, cost-to-raise-a-dollar dashboards, strict anonymous donor masking, and natural-language LYBUNT copilot queries.\n\n---\n\n## 7. Roles, Permissions & Field-Level Governance\n\n| Role | Permitted Actions | Restricted / Field-Level Boundaries |\n| :--- | :--- | :--- |\n| **Development Associate / Gift Clerk** | Enter `IndGiftTransaction`s, issue standard `IndTaxReceipt`s, send acknowledgments, manage `IndPeerFundraiser` pages. | Cannot write off `IndPledgeCommitment` balances, reallocate posted `IndRestrictedFund` gifts, or edit `ISSUED` tax receipts in place. |\n| **Major Gifts / Grants Officer** | Manage assigned `IndDonorProfile` portfolios and `<rapider-kanban>` `IndGrantProposal` pipeline, draft AI stewardship briefs in `projectChannelMessage`. | Cannot modify GL `FinAccount` mappings on `IndRestrictedFund` or unmask `isAnonymous = true` donors outside their assigned portfolio. |\n| **Nonprofit Finance Controller** | Configure `IndRestrictedFund` -> `FinAccount` mappings, trigger subledger-to-`FinJournalEntry` postings & restriction releases, approve write-off/reallocation `WorkItem`s, execute `voidAndReissueTaxReceipt`. | Cannot alter immutable donor Gift Aid signature timestamps without new donor documentation. |\n| **Volunteer / Event Coordinator** | View `MktEvent` gala check-ins and P2P team progress (`IndPeerFundraiser`) with anonymous gifts masked as `\"Anonymous Donor\"`. | Zero access to constituent wealth/generosity scores, tax IDs, bank/payment references, or major-gift cultivation notes. |\n| **Development Director / Admin** | Full configuration of fundraising appeals, stewardship SLAs, receipt templates, retention analytics, and co-approving high-value `WorkItem`s. | Cannot bypass append-only sequential `IndTaxReceipt` audit logs or post unbalanced GL journals. |\n\n---\n\n## 8. Technical APIs, Guarded Commands, Events & `requiredWorkflows`\n\n### 8.1 Guarded Domain Commands\nEvery mutating command enforces `idempotencyKey`, `correlationId`, and `expectedVersion`:\n- `ind.nonprofit.recordGift` — Validates `Decimal128` fund split conservation, quid-pro-quo / DAF tax-deductibility rules, updates hard/soft credits on `IndDonorProfile`, applies installment payments to `IndPledgeCommitment`, and queues GL posting.\n- `ind.nonprofit.issueTaxReceipt` — Generates gapless sequential `IndTaxReceipt` (blocking deductible IRS/CRA receipts on `DAF_GRANT` tenders).\n- `ind.nonprofit.voidAndReissueTaxReceipt` — Marks existing `IndTaxReceipt` as `VOIDED_REPLACED` with `voidReason` and atomically issues a new sequential receipt.\n- `ind.nonprofit.releaseFundRestriction` — Verifies `availableRestrictedBalance >= amount` on `IndRestrictedFund` and posts ASC 958 restriction-release `FinJournalEntry` to `acc`.\n\n### 8.2 Domain Events Published & Consumed (Kafka)\n- **Published:** `ind.nonprofit.giftSettled.v1`, `ind.nonprofit.taxReceiptIssued.v1`, `ind.nonprofit.pledgePastDue.v1`, `ind.nonprofit.grantAwarded.v1`, `ind.nonprofit.fundRestrictionReleased.v1`.\n- **Consumed:** `fin.payment.succeeded.v1` / `fin.subscription.renewed.v1` (auto-creates settled `IndGiftTransaction` for recurring sustainers), `mkt.event.registered.v1` (links gala ticket quid-pro-quo benefits).\n\n### 8.3 `requiredWorkflows` (Declared in `app.manifest.json`)\n1. `giftSettlementSubledgerAndReceiptWorkflow` — Reconciles `FinPaymentIntent` settlements, updates constituent hard/soft totals & retention cohorts, posts `FinJournalEntry` batches, and triggers 48-hour acknowledgment queues.\n2. `pledgeInstallmentAndWriteOffWorkflow` — Dispatches upcoming pledge installment reminders, flags `PAST_DUE` commitments, and routes write-off requests to Home `WorkItem`s.\n3. `annualTaxStatementAndGiftAidWorkflow` — Compiles consolidated year-end donor tax statements and UK HMRC Gift Aid 25% reclaim schedules.\n4. `donorRetentionCohortSweepWorkflow` — Nightly recalculation of `NEW_FIRST_TIME`, `REPEAT_ACTIVE`, `LYBUNT`, `SYBUNT`, and `LAPSED` statuses plus generosity scores.\n\n### 8.4 Grounded Rapider AI Rules\n- AI Stewardship & Grant Briefs (`NFP-013`) and Fundraising Copilot queries (`NFP-024`) MUST ground every figure in `IndDonorProfile`, `IndGiftTransaction`, `IndGrantProposal`, and `IndRestrictedFund` records with clickable citations.\n- AI MUST strictly enforce `isAnonymous` masking for unauthorized callers, MUST NEVER fabricate tax deductibility advice, and MUST require explicit human confirmation before dispatching external donor emails, voiding receipts, or releasing restricted funds.\n\n---\n\n## 9. Security, Privacy, Compliance & Non-Functional Requirements\n\n- **IRS Pub 1771, CRA Charities Directorate, UK HMRC Gift Aid & FASB ASC 958:** Enforces statutory contemporaneous written acknowledgment disclosures (`goodsOrServicesDisclosure`), sequential tamper-evident receipt numbering, 7-year financial/tax receipt retention, and strict separation of donor-restricted vs. unrestricted net assets.\n- **PCI-DSS, GDPR & Donor Bill of Rights Privacy:** Zero raw card/ACH numbers touch `Ind*` tables (handled exclusively via `payments` `FinPaymentIntent` tokens); donor anonymity preferences (`isAnonymousDefault`, `isAnonymous`) are enforced server-side across APIs and exports.\n- **Monetary Precision:** All gift amounts (e.g., `\\$10,000.00`), quid-pro-quo fair market values (`\\$120.00`), Gift Aid 25% reclaims, and grant burn balances use `Decimal128` — zero floating-point errors.\n- **Accessibility & Responsive UX:** Full WCAG 2.2 AA compliance (`#ffffff !important` contrast on primary/danger buttons across light and dark modes, ARIA labels on icon-only Delete buttons) across `390px` gala mobile devices, `768px` major-gift tablets, and `1440px` gift-processing desktops.\n\n---\n\n## 10. Deterministic Acceptance Criteria\n\n1. **Sidebar 3-Item Section Rule:** `app.manifest.json` defines 3 visible sidebar sections (`Overview`, `Giving & Campaigns`, `Funds & Tax Compliance`) with 3 visible items each (`displayOnMenu: true`) and 4 hidden detail/drawer routes (`displayOnMenu: false`).\n2. **SWR & Soft-Delete Cleanliness:** Every page load uses `findSWR` / `countSWR` without manual `isDeleted` API query filters and defensively filters `item.isDeleted !== true` in memory.\n3. **Active Filter Tags & Clear All:** Filtering `#/donors`, `#/gifts`, or `#/major-gifts-grants` renders `#activeFilterTagsBar` with HTML-escaped dismissible chips and `[Clear all]`, synchronously updating both table and `<rapider-kanban>` views.\n4. **Table Action Standard:** Zero standalone \"View\" buttons exist in `Actions`; Constituent Names, Gift Numbers, Pledge Numbers, Proposal Titles, and Receipt Numbers navigate to detail routes, Edit buttons render icon + text, and Delete buttons render icon-only with `title=\"Delete\"` and `aria-label=\"Delete\"`.\n5. **Custom Elements Adoption:** Donor stewardship phone fields use `<rapider-phone-input>`, and `#/major-gifts-grants` uses `<rapider-kanban>`.\n6. **Optimistic Lifecycle & Native Dialog Ban:** Saving `gift-drawer` or `pledge-drawer` resets button state in `finally`, calls `closePageDrawer()`, clears SWR cache, and updates parent views optimistically; deletions use `#rapiderConfirmOkBtn` with zero `window.alert`/`confirm`/`prompt`.\n7. **DAF & Quid-Pro-Quo Receipt Invariants:** Recording a `DAF_GRANT` sets `taxDeductibleAmount = 0.00` for individual advisor receipting and blocks IRS/CRA tax-deductible receipt issuance to the advisor; recording a gala gift with `grossAmount = \\$500.00` and `fairMarketBenefitAmount = \\$120.00` sets `taxDeductibleAmount = \\$380.00` (`Decimal128`).\n8. **Immutable Void-and-Reissue Receipts:** Direct mutation of an `ISSUED` `IndTaxReceipt` fails deterministically; `ind.nonprofit.voidAndReissueTaxReceipt` marks the prior receipt `VOIDED_REPLACED` and creates a new sequential receipt.\n9. **Restricted Fund Over-Release & Reallocation Gate:** Releasing more than `availableRestrictedBalance` on an `IndRestrictedFund` is rejected, and reallocating a posted restricted gift requires Home `WorkItem` approval.\n10. **Anonymous Donor Masking:** Querying `IndGiftTransaction` or `IndPeerFundraiser` as an Event/Volunteer role masks `displayName` whenever `isAnonymous = true`.\n11. **Click-Through Navigation & State Restoration:** Clicking a constituent on `#/donors` transitions to `#/donor-detail?id=...` without `<base href>` 404 diversion, renders hard/soft credits and receipts, and `Back to list` restores prior filter tags.\n12. **Canonical Suite Reuse & Zero `projectId`:** Zero `Ind*` models define `projectId`, and constituent masters, payment rails, subscriptions, campaigns, and GL journals reuse `CrmContact`/`CrmAccount`, `FinPaymentIntent`, `FinSubscription`, `MktCampaign`, and `FinJournalEntry`.\n",
+  "thumbnailUrl": "",
+  "isolationScope": "ENTERPRISE_VERTICAL_SCOPED",
+  "dataModels": [
+    {
+      "name": "CrmAccount",
+      "title": "Account",
+      "description": "Customer entity with credit limit, balance, and risk profile.",
+      "domainName": "Rapider CRM Suite",
+      "domainKey": "CRM",
+      "datatableName": "CrmAccount",
+      "dataTableName": "CrmAccount",
+      "sqlTableName": "crm_account",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ code }} - {{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name",
+          "code"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "ledgerId",
+            "code",
+            "name",
+            "type"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "ledgerId"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 50,
+          "defaultContextLimit": 20,
+          "hiddenFields": [],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "phone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "creditLimit",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currentBalance",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "riskFlag",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "paymentTerms",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "accountOwner",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "taxId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "createdAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "accountCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "accountType",
+          "type": "string",
+          "description": "Allowed values: PROSPECT, CUSTOMER, PARTNER, COMPETITOR, HOUSEHOLD",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "PROSPECT",
+            "CUSTOMER",
+            "PARTNER",
+            "COMPETITOR",
+            "HOUSEHOLD"
+          ],
+          "options": [
+            "PROSPECT",
+            "CUSTOMER",
+            "PARTNER",
+            "COMPETITOR",
+            "HOUSEHOLD"
+          ]
+        },
+        {
+          "name": "customerTier",
+          "type": "string",
+          "description": "Allowed values: ENTERPRISE, MID_MARKET, SMB, VIP",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "ENTERPRISE",
+            "MID_MARKET",
+            "SMB",
+            "VIP"
+          ],
+          "options": [
+            "ENTERPRISE",
+            "MID_MARKET",
+            "SMB",
+            "VIP"
+          ]
+        },
+        {
+          "name": "supportSlaTier",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "primaryDomain",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "parentAccountId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "CrmAccount",
+          "referenceField": "id"
+        },
+        {
+          "name": "legalEntityId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "FinLegalEntity",
+          "referenceField": "id"
+        },
+        {
+          "name": "industry",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "revenue",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "website",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "ownerPersonId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "ledger",
+          "type": "belongsTo",
+          "sourceModel": "CrmAccount",
+          "sourceField": "ledgerId",
+          "targetModel": "FinLedger",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The ledger this account belongs to."
+        },
+        {
+          "name": "parentAccount",
+          "type": "belongsTo",
+          "sourceModel": "CrmAccount",
+          "sourceField": "parentAccountId",
+          "targetModel": "CrmAccount",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "CrmAccount parentAccount foreign key link to CrmAccount."
+        },
+        {
+          "name": "ownerEmployee",
+          "type": "belongsTo",
+          "sourceModel": "CrmAccount",
+          "sourceField": "ownerEmployeeId",
+          "targetModel": "HrEmployee",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "CrmAccount ownerEmployee foreign key link to HrEmployee."
+        },
+        {
+          "name": "territory",
+          "type": "belongsTo",
+          "sourceModel": "CrmAccount",
+          "sourceField": "territoryId",
+          "targetModel": "CrmTerritory",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "CrmAccount territory foreign key link to CrmTerritory."
+        },
+        {
+          "name": "defaultBillingProfile",
+          "type": "belongsTo",
+          "sourceModel": "CrmAccount",
+          "sourceField": "defaultBillingProfileId",
+          "targetModel": "FinBillingProfile",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "CrmAccount defaultBillingProfile foreign key link to FinBillingProfile."
+        }
+      ]
+    },
+    {
+      "name": "CrmContact",
+      "title": "Contact",
+      "description": "Represents an individual person, usually associated with an Account.",
+      "domainName": "Rapider CRM Suite",
+      "domainKey": "CRM",
+      "datatableName": "CrmContact",
+      "dataTableName": "CrmContact",
+      "sqlTableName": "crm_contact",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ firstName }} {{ lastName }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "firstName",
+          "lastName",
+          "email",
+          "jobTitle"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "firstName",
+            "lastName",
+            "accountId"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [],
+          "additionalPrompt": "Always link a contact to an account if mentioned.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "Email must be a valid format if provided."
+        },
+        "entityItemUpdate": {
+          "immutableFields": [],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 15,
+          "hiddenFields": [],
+          "maskedFields": [
+            "phone"
+          ],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "accountId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "firstName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "lastName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "phone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "fullName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "phoneE164",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "jobSeniority",
+          "type": "string",
+          "description": "Allowed values: C_SUITE, VP, DIRECTOR, MANAGER, IC",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "C_SUITE",
+            "VP",
+            "DIRECTOR",
+            "MANAGER",
+            "IC"
+          ],
+          "options": [
+            "C_SUITE",
+            "VP",
+            "DIRECTOR",
+            "MANAGER",
+            "IC"
+          ]
+        },
+        {
+          "name": "buyingRole",
+          "type": "string",
+          "description": "Allowed values: ECONOMIC_BUYER, CHAMPION, EVALUATOR, PROCUREMENT, END_USER",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "ECONOMIC_BUYER",
+            "CHAMPION",
+            "EVALUATOR",
+            "PROCUREMENT",
+            "END_USER"
+          ],
+          "options": [
+            "ECONOMIC_BUYER",
+            "CHAMPION",
+            "EVALUATOR",
+            "PROCUREMENT",
+            "END_USER"
+          ]
+        },
+        {
+          "name": "portalUserId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "preferredLanguage",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "timezone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "marketingConsentStatus",
+          "type": "string",
+          "description": "Allowed values: OPTED_IN, OPTED_OUT, UNSET",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "OPTED_IN",
+            "OPTED_OUT",
+            "UNSET"
+          ],
+          "options": [
+            "OPTED_IN",
+            "OPTED_OUT",
+            "UNSET"
+          ]
+        },
+        {
+          "name": "dncStatus",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Allowed values: ACTIVE, INACTIVE, BOUNCED, SUPPRESSED",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "ACTIVE",
+            "INACTIVE",
+            "BOUNCED",
+            "SUPPRESSED"
+          ],
+          "options": [
+            "ACTIVE",
+            "INACTIVE",
+            "BOUNCED",
+            "SUPPRESSED"
+          ]
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "company",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "account",
+          "type": "belongsTo",
+          "sourceModel": "CrmContact",
+          "sourceField": "accountId",
+          "targetModel": "CrmAccount",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The account this contact is associated with."
+        },
+        {
+          "name": "opportunities",
+          "type": "hasMany",
+          "sourceModel": "CrmContact",
+          "sourceField": "id",
+          "targetModel": "CrmOpportunity",
+          "targetField": "primaryContactId",
+          "throughModel": null,
+          "description": "Opportunities where this contact is the primary stakeholder."
+        },
+        {
+          "name": "ownerEmployee",
+          "type": "belongsTo",
+          "sourceModel": "CrmContact",
+          "sourceField": "ownerEmployeeId",
+          "targetModel": "HrEmployee",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "CrmContact ownerEmployee foreign key link to HrEmployee."
+        },
+        {
+          "name": "sourceCampaign",
+          "type": "belongsTo",
+          "sourceModel": "CrmContact",
+          "sourceField": "sourceCampaignId",
+          "targetModel": "MktCampaign",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "CrmContact sourceCampaign foreign key link to MktCampaign."
+        }
+      ]
+    },
+    {
+      "name": "FinJournalEntry",
+      "title": "Journal Entry",
+      "description": "A financial transaction recorded in the ledger.",
+      "domainName": "Rapider Finance Suite",
+      "domainKey": "FIN",
+      "datatableName": "FinJournalEntry",
+      "dataTableName": "FinJournalEntry",
+      "sqlTableName": "fin_journal_entry",
+      "isolationScope": "ENTERPRISE_SHARED_GOVERNED",
+      "titleFieldTemplate": "{{ entryDate }} - {{ description }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "description"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "ledgerId",
+            "entryDate",
+            "status"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [
+            "lines"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "Ensure total debits equal total credits in the lines.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "ledgerId"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "",
+          "restrictedStates": [
+            {
+              "description": "Cannot modify posted journal entries.",
+              "where": {}
+            }
+          ]
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 10,
+          "hiddenFields": [],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [
+            "lines"
+          ],
+          "restrictedStates": [
+            {
+              "description": "Cannot delete posted journal entries.",
+              "where": {}
+            }
+          ]
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "ledgerId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "entryDate",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "ledger",
+          "type": "belongsTo",
+          "sourceModel": "FinJournalEntry",
+          "sourceField": "ledgerId",
+          "targetModel": "FinLedger",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The ledger this entry belongs to."
+        },
+        {
+          "name": "lines",
+          "type": "hasMany",
+          "sourceModel": "FinJournalEntry",
+          "sourceField": "id",
+          "targetModel": "FinJournalEntryLine",
+          "targetField": "journalEntryId",
+          "throughModel": null,
+          "description": "Lines of the journal entry."
+        }
+      ]
+    },
+    {
+      "name": "FinPaymentIntent",
+      "title": "Payment Intent",
+      "description": "Represents a request to move money, such as a supplier payment, refund, or transfer.",
+      "domainName": "Rapider Finance Suite",
+      "domainKey": "FIN",
+      "datatableName": "FinPaymentIntent",
+      "dataTableName": "FinPaymentIntent",
+      "sqlTableName": "fin_payment_intent",
+      "isolationScope": "ENTERPRISE_SHARED_GOVERNED",
+      "titleFieldTemplate": "{{ payeeName }} - {{ amount }} {{ currency }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "payeeName",
+          "payeeAccount",
+          "status"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "amount",
+            "currency",
+            "payeeName",
+            "providerId"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "status"
+          ],
+          "additionalPrompt": "Ensure the currency is a valid 3-letter ISO code. Default status to 'Pending'.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "If amount is over 10000, ensure a sourceDocumentId is provided."
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "amount",
+            "currency",
+            "payeeName"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "Only update status if authorized.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "Cannot change providerId if status is 'Processing' or 'Executed'.",
+          "restrictedStates": [
+            {
+              "description": "Cannot modify executed or failed payment intents.",
+              "where": {}
+            }
+          ]
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [],
+          "maskedFields": [
+            "payeeAccount"
+          ],
+          "additionalPrompt": "Highlight failed payment intents."
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [
+            "settlements"
+          ],
+          "restrictedStates": [
+            {
+              "description": "Cannot delete executed payment intents.",
+              "where": {}
+            }
+          ]
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "batchId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "providerId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "amount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "payeeName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "payeeAccount",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "sourceDocumentId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "direction",
+          "type": "string",
+          "description": "Allowed values: INBOUND_COLLECTION, OUTBOUND_PAYOUT) (unifies billing & payments",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "INBOUND_COLLECTION",
+            "OUTBOUND_PAYOUT) (unifies billing & payments"
+          ],
+          "options": [
+            "INBOUND_COLLECTION",
+            "OUTBOUND_PAYOUT) (unifies billing & payments"
+          ]
+        },
+        {
+          "name": "accountId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "CrmAccount",
+          "referenceField": "id"
+        },
+        {
+          "name": "supplierId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "OpsSupplierProfile",
+          "referenceField": "id"
+        },
+        {
+          "name": "sourceDocumentType",
+          "type": "string",
+          "description": "Allowed values: INVOICE, SUPPLIER_BILL, EXPENSE_REPORT, PAYROLL_RUN, ORDER, REFUND",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "INVOICE",
+            "SUPPLIER_BILL",
+            "EXPENSE_REPORT",
+            "PAYROLL_RUN",
+            "ORDER",
+            "REFUND"
+          ],
+          "options": [
+            "INVOICE",
+            "SUPPLIER_BILL",
+            "EXPENSE_REPORT",
+            "PAYROLL_RUN",
+            "ORDER",
+            "REFUND"
+          ]
+        },
+        {
+          "name": "currencyCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "tokenRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "mandateRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "idempotencyKey",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "providerRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "payerId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "batch",
+          "type": "belongsTo",
+          "sourceModel": "FinPaymentIntent",
+          "sourceField": "batchId",
+          "targetModel": "FinPaymentBatch",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The batch this payment intent belongs to."
+        },
+        {
+          "name": "provider",
+          "type": "belongsTo",
+          "sourceModel": "FinPaymentIntent",
+          "sourceField": "providerId",
+          "targetModel": "FinPaymentProvider",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The provider executing this payment intent."
+        },
+        {
+          "name": "settlements",
+          "type": "hasMany",
+          "sourceModel": "FinPaymentIntent",
+          "sourceField": "id",
+          "targetModel": "FinSettlement",
+          "targetField": "intentId",
+          "throughModel": null,
+          "description": "Settlements associated with this payment intent."
+        },
+        {
+          "name": "account",
+          "type": "belongsTo",
+          "sourceModel": "FinPaymentIntent",
+          "sourceField": "accountId",
+          "targetModel": "CrmAccount",
+          "targetField": "id?",
+          "throughModel": null,
+          "description": "FinPaymentIntent account foreign key link to CrmAccount."
+        },
+        {
+          "name": "supplier",
+          "type": "belongsTo",
+          "sourceModel": "FinPaymentIntent",
+          "sourceField": "supplierId",
+          "targetModel": "OpsSupplierProfile",
+          "targetField": "id?",
+          "throughModel": null,
+          "description": "FinPaymentIntent supplier foreign key link to OpsSupplierProfile."
+        }
+      ]
+    },
+    {
+      "name": "FinSubscription",
+      "title": "Subscription",
+      "description": "Represents a recurring billing subscription for an account.",
+      "domainName": "Rapider Finance Suite",
+      "domainKey": "FIN",
+      "datatableName": "FinSubscription",
+      "dataTableName": "FinSubscription",
+      "sqlTableName": "fin_subscription",
+      "isolationScope": "ENTERPRISE_SHARED_GOVERNED",
+      "titleFieldTemplate": "{{ planName }} - {{ status }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "planName",
+          "status"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "accountId",
+            "planName",
+            "monthlyRate",
+            "startDate"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "status"
+          ],
+          "additionalPrompt": "Default status to 'Active' unless specified otherwise.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "Ensure monthlyRate is a positive number."
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "accountId"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "If status changes to 'Canceled', ensure endDate is populated.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "endDate must be after startDate if provided.",
+          "restrictedStates": [
+            {
+              "description": "Cannot modify canceled subscriptions.",
+              "where": {}
+            }
+          ]
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [],
+          "maskedFields": [],
+          "additionalPrompt": "Highlight subscriptions that are expiring soon."
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": [
+            {
+              "description": "Cannot delete active subscriptions. Cancel them instead.",
+              "where": {}
+            }
+          ]
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "accountId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "planName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "monthlyRate",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "startDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "endDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "subscriptionNumber",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "contactId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "CrmContact",
+          "referenceField": "id"
+        },
+        {
+          "name": "billingOfferId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "FinBillingOffer",
+          "referenceField": "id"
+        },
+        {
+          "name": "billingInterval",
+          "type": "string",
+          "description": "Allowed values: MONTHLY, QUARTERLY, ANNUAL, USAGE",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "MONTHLY",
+            "QUARTERLY",
+            "ANNUAL",
+            "USAGE"
+          ],
+          "options": [
+            "MONTHLY",
+            "QUARTERLY",
+            "ANNUAL",
+            "USAGE"
+          ]
+        },
+        {
+          "name": "mrrAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "arrAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "autoRenew",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "cancelAtPeriodEnd",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "offerId",
+          "type": "string",
+          "description": "",
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "customerId",
+          "type": "string",
+          "description": "",
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "state",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currentPeriodStart",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currentPeriodEnd",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "createdAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "account",
+          "type": "belongsTo",
+          "sourceModel": "FinSubscription",
+          "sourceField": "accountId",
+          "targetModel": "CrmAccount",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The account this subscription belongs to."
+        },
+        {
+          "name": "contact",
+          "type": "belongsTo",
+          "sourceModel": "FinSubscription",
+          "sourceField": "contactId",
+          "targetModel": "CrmContact",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "FinSubscription contact foreign key link to CrmContact."
+        },
+        {
+          "name": "billingOffer",
+          "type": "belongsTo",
+          "sourceModel": "FinSubscription",
+          "sourceField": "billingOfferId",
+          "targetModel": "FinBillingOffer",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "FinSubscription billingOffer foreign key link to FinBillingOffer."
+        },
+        {
+          "name": "billingProfile",
+          "type": "belongsTo",
+          "sourceModel": "FinSubscription",
+          "sourceField": "billingProfileId",
+          "targetModel": "FinBillingProfile",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "FinSubscription billingProfile foreign key link to FinBillingProfile."
+        }
+      ]
+    },
+    {
+      "name": "FinSupplierBill",
+      "title": "Supplier Bill",
+      "description": "Canonical liability record representing an invoice received from a supplier.",
+      "domainName": "Rapider Finance Suite",
+      "domainKey": "FIN",
+      "datatableName": "FinSupplierBill",
+      "dataTableName": "FinSupplierBill",
+      "sqlTableName": "fin_supplier_bill",
+      "isolationScope": "ENTERPRISE_SHARED_GOVERNED",
+      "titleFieldTemplate": "{{ billNumber }} - {{ totalAmount }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "billNumber",
+          "poNumber",
+          "notes"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "billNumber",
+            "supplierId",
+            "totalAmount"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [
+            "supplier"
+          ],
+          "autoGenerateFields": [
+            "status",
+            "matchedStatus"
+          ],
+          "additionalPrompt": "Verify due date matches supplier payment terms.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "Ensure totalAmount is a positive decimal number."
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "billNumber"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "Updating an approved bill may require re-approval.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "",
+          "restrictedStates": [
+            {
+              "description": "Cannot modify paid bills.",
+              "where": {
+                "status": "Paid"
+              }
+            }
+          ]
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [
+            "lines"
+          ],
+          "restrictedStates": [
+            {
+              "description": "Cannot delete paid bills.",
+              "where": {
+                "status": "Paid"
+              }
+            }
+          ]
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "billNumber",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "supplierId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "poNumber",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "billDate",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "dueDate",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "subtotal",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "taxAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "totalAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "matchedStatus",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "approvalStatus",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "paymentStatus",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "ocrExtractionConfidence",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "fileAttachmentRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "supplierRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "vendorNumber",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "receivedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "documentRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "coding",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "tax",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "totals",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "matching",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": []
+    },
+    {
+      "name": "MktCampaign",
+      "title": "Marketing Campaign",
+      "description": "Central marketing campaign record for cross-channel planning, budgeting, and performance tracking.",
+      "domainName": "Rapider Marketing Suite",
+      "domainKey": "MKT",
+      "datatableName": "MktCampaign",
+      "dataTableName": "MktCampaign",
+      "sqlTableName": "mkt_campaign",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name",
+          "code",
+          "description"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Marketing Campaign, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "code",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "objective",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "ownerUserId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "startAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "endAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "timezone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "budgetAmount",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "brandId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "parentCampaignId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "goalDefinition",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "attributionModelId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "startDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "endDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "budget",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "assetLinks",
+          "type": "hasMany",
+          "sourceModel": "MktCampaign",
+          "sourceField": "id",
+          "targetModel": "MktCampaignAssetLink",
+          "targetField": "campaignId",
+          "throughModel": null,
+          "description": "MktCampaign relation to MktCampaignAssetLink."
+        },
+        {
+          "name": "audiences",
+          "type": "hasMany",
+          "sourceModel": "MktCampaign",
+          "sourceField": "id",
+          "targetModel": "MktAudienceSnapshot",
+          "targetField": "campaignId",
+          "throughModel": null,
+          "description": "MktCampaign relation to MktAudienceSnapshot."
+        },
+        {
+          "name": "journeys",
+          "type": "hasMany",
+          "sourceModel": "MktCampaign",
+          "sourceField": "id",
+          "targetModel": "MktMarketingJourney",
+          "targetField": "campaignId",
+          "throughModel": null,
+          "description": "MktCampaign relation to MktMarketingJourney."
+        }
+      ]
+    },
+    {
+      "name": "MktEmailMessage",
+      "title": "Email Message",
+      "description": "Email composition specification, sender metadata, subject, templates, and delivery settings.",
+      "domainName": "Rapider Marketing Suite",
+      "domainKey": "MKT",
+      "datatableName": "MktEmailMessage",
+      "dataTableName": "MktEmailMessage",
+      "sqlTableName": "mkt_email_message",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Email Message, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "purpose",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "fromName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "fromAddress",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "replyTo",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "subject",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "preheader",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "htmlAssetVersionId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "textContentRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "audienceId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "suppressionIds",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "campaignId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "scheduledAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "timezone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "providerConnectionId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "trackingPolicy",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "sends",
+          "type": "hasMany",
+          "sourceModel": "MktEmailMessage",
+          "sourceField": "id",
+          "targetModel": "MktEmailSend",
+          "targetField": "emailMessageId",
+          "throughModel": null,
+          "description": "MktEmailMessage relation to MktEmailSend."
+        },
+        {
+          "name": "variants",
+          "type": "hasMany",
+          "sourceModel": "MktEmailMessage",
+          "sourceField": "id",
+          "targetModel": "MktEmailVariant",
+          "targetField": "emailMessageId",
+          "throughModel": null,
+          "description": "MktEmailMessage relation to MktEmailVariant."
+        }
+      ]
+    },
+    {
+      "name": "MktEvent",
+      "title": "Marketing Event",
+      "description": "In-person, virtual, or hybrid event operations, capacity constraints, venue links, and scheduling.",
+      "domainName": "Rapider Marketing Suite",
+      "domainKey": "MKT",
+      "datatableName": "MktEvent",
+      "dataTableName": "MktEvent",
+      "sqlTableName": "mkt_event",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name",
+          "description"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Marketing Event, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "timezone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "startAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "endAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "venueId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "virtualProviderRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "capacity",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "registrationOpenAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "registrationCloseAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "campaignId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "ownerUserId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "sessions",
+          "type": "hasMany",
+          "sourceModel": "MktEvent",
+          "sourceField": "id",
+          "targetModel": "MktEventSession",
+          "targetField": "eventId",
+          "throughModel": null,
+          "description": "MktEvent relation to MktEventSession."
+        },
+        {
+          "name": "registrations",
+          "type": "hasMany",
+          "sourceModel": "MktEvent",
+          "sourceField": "id",
+          "targetModel": "MktEventRegistration",
+          "targetField": "eventId",
+          "throughModel": null,
+          "description": "MktEvent relation to MktEventRegistration."
+        },
+        {
+          "name": "attendance",
+          "type": "hasMany",
+          "sourceModel": "MktEvent",
+          "sourceField": "id",
+          "targetModel": "MktEventAttendance",
+          "targetField": "eventId",
+          "throughModel": null,
+          "description": "MktEvent relation to MktEventAttendance."
+        }
+      ]
+    },
+    {
+      "name": "IndDonorProfile",
+      "title": "Donor Profile",
+      "description": "Exactly one of `crmContactId` or `crmAccountId` must be bound as primary legal constituent; `isAnonymousDefault = true` masks `displayName` for non-Finance/non-assigned roles.",
+      "domainName": "Rapider Industry Verticals Suite",
+      "domainKey": "IND",
+      "datatableName": "IndDonorProfile",
+      "dataTableName": "IndDonorProfile",
+      "sqlTableName": "ind_donor_profile",
+      "isolationScope": "ENTERPRISE_VERTICAL_SCOPED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Donor Profile, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "constituentCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "donorType",
+          "type": "string",
+          "description": "Allowed values: INDIVIDUAL, HOUSEHOLD, FOUNDATION, CORPORATE, DAF_SPONSOR",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "INDIVIDUAL",
+            "HOUSEHOLD",
+            "FOUNDATION",
+            "CORPORATE",
+            "DAF_SPONSOR"
+          ],
+          "options": [
+            "INDIVIDUAL",
+            "HOUSEHOLD",
+            "FOUNDATION",
+            "CORPORATE",
+            "DAF_SPONSOR"
+          ]
+        },
+        {
+          "name": "displayName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "stewardshipPhone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "lifetimeHardCreditAmt",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "lifetimeSoftCreditAmt",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "firstGiftDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "latestGiftDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "largestGiftAmt",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currencyCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "generosityScore",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "retentionCohort",
+          "type": "string",
+          "description": "Allowed values: NEW_FIRST_TIME, REPEAT_ACTIVE, SUSTAINER, LYBUNT, SYBUNT, LAPSED",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "NEW_FIRST_TIME",
+            "REPEAT_ACTIVE",
+            "SUSTAINER",
+            "LYBUNT",
+            "SYBUNT",
+            "LAPSED"
+          ],
+          "options": [
+            "NEW_FIRST_TIME",
+            "REPEAT_ACTIVE",
+            "SUSTAINER",
+            "LYBUNT",
+            "SYBUNT",
+            "LAPSED"
+          ]
+        },
+        {
+          "name": "isAnonymousDefault",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "ukGiftAidActive",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "ukGiftAidSignedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "crmContact",
+          "type": "belongsTo",
+          "sourceModel": "IndDonorProfile",
+          "sourceField": "crmContactId",
+          "targetModel": "CrmContact",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "IndDonorProfile crmContact foreign key link to CrmContact."
+        }
+      ]
+    },
+    {
+      "name": "IndRestrictedFund",
+      "title": "Restricted Fund",
+      "description": "Unique `fundCode`; `releasedOrSpentAmt` on restricted funds cannot exceed `totalContributedAmt` (`availableRestrictedBalance >= 0.00`).",
+      "domainName": "Rapider Industry Verticals Suite",
+      "domainKey": "IND",
+      "datatableName": "IndRestrictedFund",
+      "dataTableName": "IndRestrictedFund",
+      "sqlTableName": "ind_restricted_fund",
+      "isolationScope": "ENTERPRISE_VERTICAL_SCOPED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Restricted Fund, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "fundCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "restrictionClass",
+          "type": "string",
+          "description": "Allowed values: UNRESTRICTED_GENERAL, TEMPORARILY_PURPOSE_RESTRICTED, TIME_RESTRICTED, PERMANENT_ENDOWMENT",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "UNRESTRICTED_GENERAL",
+            "TEMPORARILY_PURPOSE_RESTRICTED",
+            "TIME_RESTRICTED",
+            "PERMANENT_ENDOWMENT"
+          ],
+          "options": [
+            "UNRESTRICTED_GENERAL",
+            "TEMPORARILY_PURPOSE_RESTRICTED",
+            "TIME_RESTRICTED",
+            "PERMANENT_ENDOWMENT"
+          ]
+        },
+        {
+          "name": "purposeDescription",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "totalContributedAmt",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "releasedOrSpentAmt",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "availableRestrictedBalance",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currencyCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "revenueGlAccount",
+          "type": "belongsTo",
+          "sourceModel": "IndRestrictedFund",
+          "sourceField": "revenueGlAccountId",
+          "targetModel": "CrmAccount",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "IndRestrictedFund revenueGlAccount foreign key link to CrmAccount."
+        }
+      ]
+    },
+    {
+      "name": "IndGiftTransaction",
+      "title": "Gift Transaction",
+      "description": "Hard invariants: `sum(fundAllocationsJson.amount) == grossAmount` and `taxDeductibleAmount == max(0, grossAmount - fairMarketBenefitAmount)` unless `tenderType == DAF_GRANT` (where `taxDeductibleAmount == 0.00` for receipting because DAF sponsor already issued tax deduction); `POSTED_TO_GL` gifts cannot be edited in place without a Home `WorkItem` reversal.",
+      "domainName": "Rapider Industry Verticals Suite",
+      "domainKey": "IND",
+      "datatableName": "IndGiftTransaction",
+      "dataTableName": "IndGiftTransaction",
+      "sqlTableName": "ind_gift_transaction",
+      "isolationScope": "ENTERPRISE_VERTICAL_SCOPED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Gift Transaction, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "giftNumber",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "receivedAt",
+          "type": "datetime",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "tenderType",
+          "type": "string",
+          "description": "Allowed values: CARD_ACH, CHECK, WIRE, DAF_GRANT, STOCK_SECURITIES, IN_KIND_GOODS, EMPLOYER_MATCH",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "CARD_ACH",
+            "CHECK",
+            "WIRE",
+            "DAF_GRANT",
+            "STOCK_SECURITIES",
+            "IN_KIND_GOODS",
+            "EMPLOYER_MATCH"
+          ],
+          "options": [
+            "CARD_ACH",
+            "CHECK",
+            "WIRE",
+            "DAF_GRANT",
+            "STOCK_SECURITIES",
+            "IN_KIND_GOODS",
+            "EMPLOYER_MATCH"
+          ]
+        },
+        {
+          "name": "grossAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "fairMarketBenefitAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "taxDeductibleAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currencyCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "fundAllocationsJson",
+          "type": "object",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "softCreditsJson",
+          "type": "object",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "tributeType",
+          "type": "string",
+          "description": "Allowed values: NONE, IN_HONOR_OF, IN_MEMORY_OF",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "NONE",
+            "IN_HONOR_OF",
+            "IN_MEMORY_OF"
+          ],
+          "options": [
+            "NONE",
+            "IN_HONOR_OF",
+            "IN_MEMORY_OF"
+          ]
+        },
+        {
+          "name": "tributeHonoreeName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isAnonymous",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "acknowledgmentStatus",
+          "type": "string",
+          "description": "Allowed values: UNACKNOWLEDGED, ACKNOWLEDGED, NOT_REQUIRED",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "UNACKNOWLEDGED",
+            "ACKNOWLEDGED",
+            "NOT_REQUIRED"
+          ],
+          "options": [
+            "UNACKNOWLEDGED",
+            "ACKNOWLEDGED",
+            "NOT_REQUIRED"
+          ]
+        },
+        {
+          "name": "glPostingStatus",
+          "type": "string",
+          "description": "Allowed values: UNPOSTED, POSTED_TO_GL, REVERSED",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "UNPOSTED",
+            "POSTED_TO_GL",
+            "REVERSED"
+          ],
+          "options": [
+            "UNPOSTED",
+            "POSTED_TO_GL",
+            "REVERSED"
+          ]
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Allowed values: PENDING_SETTLEMENT, SETTLED, REFUNDED_VOIDED",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "PENDING_SETTLEMENT",
+            "SETTLED",
+            "REFUNDED_VOIDED"
+          ],
+          "options": [
+            "PENDING_SETTLEMENT",
+            "SETTLED",
+            "REFUNDED_VOIDED"
+          ]
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "hardCreditDonor",
+          "type": "belongsTo",
+          "sourceModel": "IndGiftTransaction",
+          "sourceField": "hardCreditDonorId",
+          "targetModel": "IndDonorProfile",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "IndGiftTransaction hardCreditDonor foreign key link to IndDonorProfile."
+        }
+      ]
+    },
+    {
+      "name": "IndPledgeCommitment",
+      "title": "Pledge Commitment",
+      "description": "`paidToDateAmount + writtenOffAmount + remainingBalanceAmount == totalPledgedAmount` for fixed pledges; pledge write-offs (`writtenOffAmount > 0`) require Home `WorkItem` approval.",
+      "domainName": "Rapider Industry Verticals Suite",
+      "domainKey": "IND",
+      "datatableName": "IndPledgeCommitment",
+      "dataTableName": "IndPledgeCommitment",
+      "sqlTableName": "ind_pledge_commitment",
+      "isolationScope": "ENTERPRISE_VERTICAL_SCOPED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Pledge Commitment, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "pledgeNumber",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "commitmentType",
+          "type": "string",
+          "description": "Allowed values: FIXED_MULTI_YEAR_PLEDGE, SUSTAINER_RECURRING, MATCHING_CLAIM",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "FIXED_MULTI_YEAR_PLEDGE",
+            "SUSTAINER_RECURRING",
+            "MATCHING_CLAIM"
+          ],
+          "options": [
+            "FIXED_MULTI_YEAR_PLEDGE",
+            "SUSTAINER_RECURRING",
+            "MATCHING_CLAIM"
+          ]
+        },
+        {
+          "name": "pledgedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "totalPledgedAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "paidToDateAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "writtenOffAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "remainingBalanceAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currencyCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "installmentFrequency",
+          "type": "string",
+          "description": "Allowed values: MONTHLY, QUARTERLY, SEMI_ANNUAL, ANNUAL, CUSTOM",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "MONTHLY",
+            "QUARTERLY",
+            "SEMI_ANNUAL",
+            "ANNUAL",
+            "CUSTOM"
+          ],
+          "options": [
+            "MONTHLY",
+            "QUARTERLY",
+            "SEMI_ANNUAL",
+            "ANNUAL",
+            "CUSTOM"
+          ]
+        },
+        {
+          "name": "nextInstallmentDueDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "installmentsJson",
+          "type": "object",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Allowed values: ACTIVE, PAST_DUE, FULFILLED, WRITTEN_OFF, CANCELLED",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "ACTIVE",
+            "PAST_DUE",
+            "FULFILLED",
+            "WRITTEN_OFF",
+            "CANCELLED"
+          ],
+          "options": [
+            "ACTIVE",
+            "PAST_DUE",
+            "FULFILLED",
+            "WRITTEN_OFF",
+            "CANCELLED"
+          ]
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "donor",
+          "type": "belongsTo",
+          "sourceModel": "IndPledgeCommitment",
+          "sourceField": "donorId",
+          "targetModel": "IndDonorProfile",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "IndPledgeCommitment donor foreign key link to IndDonorProfile."
+        }
+      ]
+    },
+    {
+      "name": "IndGrantProposal",
+      "title": "Grant Proposal",
+      "description": "Transitioning `stage` to `AWARDED_COMMITTED` requires `awardedAmount > 0` and binds a target `IndRestrictedFund`.",
+      "domainName": "Rapider Industry Verticals Suite",
+      "domainKey": "IND",
+      "datatableName": "IndGrantProposal",
+      "dataTableName": "IndGrantProposal",
+      "sqlTableName": "ind_grant_proposal",
+      "isolationScope": "ENTERPRISE_VERTICAL_SCOPED",
+      "titleFieldTemplate": "{{ title }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "title"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Grant Proposal, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "proposalCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "opportunityType",
+          "type": "string",
+          "description": "Allowed values: INSTITUTIONAL_GRANT, MAJOR_GIFT_ASK",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "INSTITUTIONAL_GRANT",
+            "MAJOR_GIFT_ASK"
+          ],
+          "options": [
+            "INSTITUTIONAL_GRANT",
+            "MAJOR_GIFT_ASK"
+          ]
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "stage",
+          "type": "string",
+          "description": "Allowed values: IDENTIFICATION, QUALIFICATION, CULTIVATION, SOLICITATION_SUBMITTED, AWARDED_COMMITTED, STEWARDSHIP_REPORTING, DECLINED",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "IDENTIFICATION",
+            "QUALIFICATION",
+            "CULTIVATION",
+            "SOLICITATION_SUBMITTED",
+            "AWARDED_COMMITTED",
+            "STEWARDSHIP_REPORTING",
+            "DECLINED"
+          ],
+          "options": [
+            "IDENTIFICATION",
+            "QUALIFICATION",
+            "CULTIVATION",
+            "SOLICITATION_SUBMITTED",
+            "AWARDED_COMMITTED",
+            "STEWARDSHIP_REPORTING",
+            "DECLINED"
+          ]
+        },
+        {
+          "name": "askAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "awardedAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currencyCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "submissionDeadline",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "nextComplianceReportDue",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "deliverablesJson",
+          "type": "object",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "agreementFileId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "funderDonor",
+          "type": "belongsTo",
+          "sourceModel": "IndGrantProposal",
+          "sourceField": "funderDonorId",
+          "targetModel": "IndDonorProfile",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "IndGrantProposal funderDonor foreign key link to IndDonorProfile."
+        }
+      ]
+    },
+    {
+      "name": "IndPeerFundraiser",
+      "title": "Peer Fundraiser",
+      "description": "Gifts through a P2P page record `HARD_CREDIT` to the actual giver and `SOFT_CREDIT` to `championDonorId`.",
+      "domainName": "Rapider Industry Verticals Suite",
+      "domainKey": "IND",
+      "datatableName": "IndPeerFundraiser",
+      "dataTableName": "IndPeerFundraiser",
+      "sqlTableName": "ind_peer_fundraiser",
+      "isolationScope": "ENTERPRISE_VERTICAL_SCOPED",
+      "titleFieldTemplate": "{{ title }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "title"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Peer Fundraiser, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "pageSlug",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "teamName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "goalAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "raisedAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "donorCount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currencyCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Allowed values: ACTIVE, COMPLETED, ARCHIVED",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "ACTIVE",
+            "COMPLETED",
+            "ARCHIVED"
+          ],
+          "options": [
+            "ACTIVE",
+            "COMPLETED",
+            "ARCHIVED"
+          ]
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "championDonor",
+          "type": "belongsTo",
+          "sourceModel": "IndPeerFundraiser",
+          "sourceField": "championDonorId",
+          "targetModel": "IndDonorProfile",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "IndPeerFundraiser championDonor foreign key link to IndDonorProfile."
+        }
+      ]
+    },
+    {
+      "name": "IndTaxReceipt",
+      "title": "Tax Receipt",
+      "description": "Unique sequential `receiptSequenceNumber`; `ISSUED` receipts are strictly immutable — any correction invokes `voidAndReissueTaxReceipt`, marking the original `VOIDED_REPLACED` and creating a new sequential receipt.",
+      "domainName": "Rapider Industry Verticals Suite",
+      "domainKey": "IND",
+      "datatableName": "IndTaxReceipt",
+      "dataTableName": "IndTaxReceipt",
+      "sqlTableName": "ind_tax_receipt",
+      "isolationScope": "ENTERPRISE_VERTICAL_SCOPED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Tax Receipt, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "receiptSequenceNumber",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "receiptScope",
+          "type": "string",
+          "description": "Allowed values: SINGLE_GIFT, ANNUAL_CONSOLIDATED",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "SINGLE_GIFT",
+            "ANNUAL_CONSOLIDATED"
+          ],
+          "options": [
+            "SINGLE_GIFT",
+            "ANNUAL_CONSOLIDATED"
+          ]
+        },
+        {
+          "name": "taxJurisdiction",
+          "type": "string",
+          "description": "Allowed values: US_IRS_501C3, CA_CRA, UK_GIFT_AID, EU_DONATION, NON_DEDUCTIBLE_ACK",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "US_IRS_501C3",
+            "CA_CRA",
+            "UK_GIFT_AID",
+            "EU_DONATION",
+            "NON_DEDUCTIBLE_ACK"
+          ],
+          "options": [
+            "US_IRS_501C3",
+            "CA_CRA",
+            "UK_GIFT_AID",
+            "EU_DONATION",
+            "NON_DEDUCTIBLE_ACK"
+          ]
+        },
+        {
+          "name": "taxYear",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "issuedAt",
+          "type": "datetime",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "legalDonorNameSnapshot",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "grossGiftTotal",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "benefitValueTotal",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "eligibleTaxDeductibleTotal",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "ukGiftAidReclaimAmt",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currencyCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "goodsOrServicesDisclosure",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Allowed values: ISSUED, VOIDED_REPLACED",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "ISSUED",
+            "VOIDED_REPLACED"
+          ],
+          "options": [
+            "ISSUED",
+            "VOIDED_REPLACED"
+          ]
+        },
+        {
+          "name": "voidReason",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "replacedByReceiptId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "pdfFileId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "donor",
+          "type": "belongsTo",
+          "sourceModel": "IndTaxReceipt",
+          "sourceField": "donorId",
+          "targetModel": "IndDonorProfile",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "IndTaxReceipt donor foreign key link to IndDonorProfile."
+        }
+      ]
+    }
+  ],
+  "webPages": [
+    {
+      "name": "Fundraising Hub",
+      "route": "dashboard",
+      "htmlFilePath": "pages/dashboard/dashboard.html",
+      "title": "Fundraising Hub",
+      "group": "Overview",
+      "icon": "fas fa-home",
+      "displayInMenu": true,
+      "order": 1,
+      "developmentDetails": "KPI cards (countSWR), live Donor Retention % gauge, LYBUNT/SYBUNT recovery counters, <48h unacknowledged gift SLA queue, restricted vs. unrestricted chart."
+    },
+    {
+      "name": "Constituent Donors",
+      "route": "donors",
+      "htmlFilePath": "pages/donors/donors.html",
+      "title": "Constituent Donors",
+      "group": "Overview",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": true,
+      "order": 2,
+      "developmentDetails": "Searchable IndDonorProfile directory (findSWR), #activeFilterTagsBar with Clear all, generosity score, <rapider-phone-input> stewardship mobile, LYBUNT filter pills."
+    },
+    {
+      "name": "Major Gifts & Grants",
+      "route": "major-gifts-grants",
+      "htmlFilePath": "pages/major-gifts-grants/major-gifts-grants.html",
+      "title": "Major Gifts & Grants",
+      "group": "Overview",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": true,
+      "order": 3,
+      "developmentDetails": "<rapider-kanban> board across IDENTIFICATION, QUALIFICATION, CULTIVATION, SOLICITATION_SUBMITTED, AWARDED_COMMITTED, STEWARDSHIP_REPORTING, DECLINED (IndGrantProposal)."
+    },
+    {
+      "name": "Gift & DAF Ledger",
+      "route": "gifts",
+      "htmlFilePath": "pages/gifts/gifts.html",
+      "title": "Gift & DAF Ledger",
+      "group": "Giving & Campaigns",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": true,
+      "order": 4,
+      "developmentDetails": "IndGiftTransaction ledger, tender badges (CARD_ACH, DAF_GRANT, STOCK, IN_KIND), hard/soft credit summary, acknowledgment & receipt status chips."
+    },
+    {
+      "name": "Pledges & Sustainers",
+      "route": "pledges-sustainers",
+      "htmlFilePath": "pages/pledges-sustainers/pledges-sustainers.html",
+      "title": "Pledges & Sustainers",
+      "group": "Giving & Campaigns",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": true,
+      "order": 5,
+      "developmentDetails": "IndPledgeCommitment multi-year installment & FinSubscription sustainer monitor, past-due installment alerts, matching-gift claim tracker."
+    },
+    {
+      "name": "Peer-to-Peer & Appeals",
+      "route": "peer-fundraisers",
+      "htmlFilePath": "pages/peer-fundraisers/peer-fundraisers.html",
+      "title": "Peer-to-Peer & Appeals",
+      "group": "Giving & Campaigns",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": true,
+      "order": 6,
+      "developmentDetails": "IndPeerFundraiser captain/team leaderboards linked to MktCampaign/MktEvent, goal progress bars (Decimal128), anonymous-safe recognition preview."
+    },
+    {
+      "name": "Restricted Funds & GL",
+      "route": "restricted-funds",
+      "htmlFilePath": "pages/restricted-funds/restricted-funds.html",
+      "title": "Restricted Funds & GL",
+      "group": "Funds & Tax Compliance",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": true,
+      "order": 7,
+      "developmentDetails": "IndRestrictedFund balances (UNRESTRICTED, PURPOSE_RESTRICTED, ENDOWMENT), mapped FinAccount, subledger-to-FinJournalEntry posting & release log."
+    },
+    {
+      "name": "Tax Receipts & Gift Aid",
+      "route": "tax-receipts",
+      "htmlFilePath": "pages/tax-receipts/tax-receipts.html",
+      "title": "Tax Receipts & Gift Aid",
+      "group": "Funds & Tax Compliance",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": true,
+      "order": 8,
+      "developmentDetails": "Sequential IndTaxReceipt register, batch year-end consolidated statement generator, void-and-reissue action, UK Gift Aid 25% claim export."
+    },
+    {
+      "name": "Retention & Appeal ROI",
+      "route": "stewardship-analytics",
+      "htmlFilePath": "pages/stewardship-analytics/stewardship-analytics.html",
+      "title": "Retention & Appeal ROI",
+      "group": "Funds & Tax Compliance",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": true,
+      "order": 9,
+      "developmentDetails": "First-time vs. repeat retention cohorts, campaign cost-to-raise-a-dollar (MktCampaign), grant compliance report calendar, light/dark theme charts."
+    },
+    {
+      "name": "Constituent 360 Timeline",
+      "route": "donor-detail",
+      "htmlFilePath": "pages/donor-detail/donor-detail.html",
+      "title": "Constituent 360 Timeline",
+      "group": "(Hidden)",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": false,
+      "order": 10,
+      "developmentDetails": "Full IndDonorProfile view (?id=...), hard vs. soft credit totals, pledges, tax receipts, grounded AI stewardship draft (projectChannelMessage), Back to list."
+    },
+    {
+      "name": "Grant & Major Gift Dossier",
+      "route": "grant-detail",
+      "htmlFilePath": "pages/grant-detail/grant-detail.html",
+      "title": "Grant & Major Gift Dossier",
+      "group": "(Hidden)",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": false,
+      "order": 11,
+      "developmentDetails": "IndGrantProposal award stipulations, linked IndRestrictedFund burn rate, milestone deliverables, signed agreement files, Back to list."
+    },
+    {
+      "name": "Record Gift / DAF / Stock",
+      "route": "gift-drawer",
+      "htmlFilePath": "pages/gift-drawer/gift-drawer.html",
+      "title": "Record Gift / DAF / Stock",
+      "group": "(Hidden)",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": false,
+      "order": 12,
+      "developmentDetails": "Sliding drawer capturing payer, tender, multi-fund Decimal128 splits, quid-pro-quo benefit deduction, soft-credit advisor, finally reset & closePageDrawer()."
+    },
+    {
+      "name": "Create Pledge Schedule",
+      "route": "pledge-drawer",
+      "htmlFilePath": "pages/pledge-drawer/pledge-drawer.html",
+      "title": "Create Pledge Schedule",
+      "group": "(Hidden)",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": false,
+      "order": 13,
+      "developmentDetails": "Sliding drawer configuring multi-year IndPledgeCommitment, installment frequency, IndRestrictedFund designation, donor <rapider-phone-input>, and instant parent refresh."
+    }
+  ],
+  "workflows": [],
+  "variables": [],
+  "tools": [],
+  "pages": [
+    {
+      "name": "Fundraising Hub",
+      "route": "dashboard",
+      "htmlFilePath": "pages/dashboard/dashboard.html",
+      "title": "Fundraising Hub",
+      "group": "Overview",
+      "icon": "fas fa-home",
+      "displayInMenu": true,
+      "order": 1,
+      "developmentDetails": "KPI cards (countSWR), live Donor Retention % gauge, LYBUNT/SYBUNT recovery counters, <48h unacknowledged gift SLA queue, restricted vs. unrestricted chart."
+    },
+    {
+      "name": "Constituent Donors",
+      "route": "donors",
+      "htmlFilePath": "pages/donors/donors.html",
+      "title": "Constituent Donors",
+      "group": "Overview",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": true,
+      "order": 2,
+      "developmentDetails": "Searchable IndDonorProfile directory (findSWR), #activeFilterTagsBar with Clear all, generosity score, <rapider-phone-input> stewardship mobile, LYBUNT filter pills."
+    },
+    {
+      "name": "Major Gifts & Grants",
+      "route": "major-gifts-grants",
+      "htmlFilePath": "pages/major-gifts-grants/major-gifts-grants.html",
+      "title": "Major Gifts & Grants",
+      "group": "Overview",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": true,
+      "order": 3,
+      "developmentDetails": "<rapider-kanban> board across IDENTIFICATION, QUALIFICATION, CULTIVATION, SOLICITATION_SUBMITTED, AWARDED_COMMITTED, STEWARDSHIP_REPORTING, DECLINED (IndGrantProposal)."
+    },
+    {
+      "name": "Gift & DAF Ledger",
+      "route": "gifts",
+      "htmlFilePath": "pages/gifts/gifts.html",
+      "title": "Gift & DAF Ledger",
+      "group": "Giving & Campaigns",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": true,
+      "order": 4,
+      "developmentDetails": "IndGiftTransaction ledger, tender badges (CARD_ACH, DAF_GRANT, STOCK, IN_KIND), hard/soft credit summary, acknowledgment & receipt status chips."
+    },
+    {
+      "name": "Pledges & Sustainers",
+      "route": "pledges-sustainers",
+      "htmlFilePath": "pages/pledges-sustainers/pledges-sustainers.html",
+      "title": "Pledges & Sustainers",
+      "group": "Giving & Campaigns",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": true,
+      "order": 5,
+      "developmentDetails": "IndPledgeCommitment multi-year installment & FinSubscription sustainer monitor, past-due installment alerts, matching-gift claim tracker."
+    },
+    {
+      "name": "Peer-to-Peer & Appeals",
+      "route": "peer-fundraisers",
+      "htmlFilePath": "pages/peer-fundraisers/peer-fundraisers.html",
+      "title": "Peer-to-Peer & Appeals",
+      "group": "Giving & Campaigns",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": true,
+      "order": 6,
+      "developmentDetails": "IndPeerFundraiser captain/team leaderboards linked to MktCampaign/MktEvent, goal progress bars (Decimal128), anonymous-safe recognition preview."
+    },
+    {
+      "name": "Restricted Funds & GL",
+      "route": "restricted-funds",
+      "htmlFilePath": "pages/restricted-funds/restricted-funds.html",
+      "title": "Restricted Funds & GL",
+      "group": "Funds & Tax Compliance",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": true,
+      "order": 7,
+      "developmentDetails": "IndRestrictedFund balances (UNRESTRICTED, PURPOSE_RESTRICTED, ENDOWMENT), mapped FinAccount, subledger-to-FinJournalEntry posting & release log."
+    },
+    {
+      "name": "Tax Receipts & Gift Aid",
+      "route": "tax-receipts",
+      "htmlFilePath": "pages/tax-receipts/tax-receipts.html",
+      "title": "Tax Receipts & Gift Aid",
+      "group": "Funds & Tax Compliance",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": true,
+      "order": 8,
+      "developmentDetails": "Sequential IndTaxReceipt register, batch year-end consolidated statement generator, void-and-reissue action, UK Gift Aid 25% claim export."
+    },
+    {
+      "name": "Retention & Appeal ROI",
+      "route": "stewardship-analytics",
+      "htmlFilePath": "pages/stewardship-analytics/stewardship-analytics.html",
+      "title": "Retention & Appeal ROI",
+      "group": "Funds & Tax Compliance",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": true,
+      "order": 9,
+      "developmentDetails": "First-time vs. repeat retention cohorts, campaign cost-to-raise-a-dollar (MktCampaign), grant compliance report calendar, light/dark theme charts."
+    },
+    {
+      "name": "Constituent 360 Timeline",
+      "route": "donor-detail",
+      "htmlFilePath": "pages/donor-detail/donor-detail.html",
+      "title": "Constituent 360 Timeline",
+      "group": "(Hidden)",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": false,
+      "order": 10,
+      "developmentDetails": "Full IndDonorProfile view (?id=...), hard vs. soft credit totals, pledges, tax receipts, grounded AI stewardship draft (projectChannelMessage), Back to list."
+    },
+    {
+      "name": "Grant & Major Gift Dossier",
+      "route": "grant-detail",
+      "htmlFilePath": "pages/grant-detail/grant-detail.html",
+      "title": "Grant & Major Gift Dossier",
+      "group": "(Hidden)",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": false,
+      "order": 11,
+      "developmentDetails": "IndGrantProposal award stipulations, linked IndRestrictedFund burn rate, milestone deliverables, signed agreement files, Back to list."
+    },
+    {
+      "name": "Record Gift / DAF / Stock",
+      "route": "gift-drawer",
+      "htmlFilePath": "pages/gift-drawer/gift-drawer.html",
+      "title": "Record Gift / DAF / Stock",
+      "group": "(Hidden)",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": false,
+      "order": 12,
+      "developmentDetails": "Sliding drawer capturing payer, tender, multi-fund Decimal128 splits, quid-pro-quo benefit deduction, soft-credit advisor, finally reset & closePageDrawer()."
+    },
+    {
+      "name": "Create Pledge Schedule",
+      "route": "pledge-drawer",
+      "htmlFilePath": "pages/pledge-drawer/pledge-drawer.html",
+      "title": "Create Pledge Schedule",
+      "group": "(Hidden)",
+      "icon": "fas fa-briefcase",
+      "displayInMenu": false,
+      "order": 13,
+      "developmentDetails": "Sliding drawer configuring multi-year IndPledgeCommitment, installment frequency, IndRestrictedFund designation, donor <rapider-phone-input>, and instant parent refresh."
+    }
+  ]
+}
